@@ -50,7 +50,7 @@ There is a couple of example implementations to show the use of the actual api.
 
 # Future plans
 
-  - create a npm module
+  - create a npm module(Done)
   - create a cloud service to share the configurations
   - improve the properties system
   - Implement a generic repository to enable diferent types of databases
