@@ -4,7 +4,7 @@ var node = framework.node
 var knowledge = framework.knowledge
 var http = framework.http
 
-var mapk = node()
+var mapk = node(__dirname+"/mapek.ini")
 
 var net = mapk.network
 

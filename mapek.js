@@ -14,15 +14,15 @@ var node = function(propertiesPath){
 
     rest.init(properties.rest.port);
 
-    var monitor = function(cb){
+    var monitor = function(callback){
         var process = function(data){
             events.emitProcess(data)
         }
-        events.listenMonitor(cb,process)
+        events.listenMonitor(callback,process)
     }
 
-    var process = function(cb){
-        events.listenProcess(cb)
+    var process = function(callback){
+        events.listenProcess(callback)
     }
 
     return {

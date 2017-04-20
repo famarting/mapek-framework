@@ -17,9 +17,9 @@ var emitMonitor = function(data){
     emitter.emit(EVENT_MONITOR,data)
 }
 
-var listenMonitor = function(cb,process){
+var listenMonitor = function(callback,process){
     emitter.on(EVENT_MONITOR,function(data){
-        cb(data,process)
+        callback(data,process)
     })
 }
 
@@ -27,9 +27,9 @@ var emitProcess = function(data){
     emitter.emit(EVENT_PROCESS,data)
 }
 
-var listenProcess = function(cb){
+var listenProcess = function(callback){
     emitter.on(EVENT_PROCESS,function(data){
-        cb(data)
+        callback(data)
     })
 }
 

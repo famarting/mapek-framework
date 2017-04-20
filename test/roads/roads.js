@@ -1,7 +1,7 @@
 var framework = require("../../mapek") 
 var node = framework.node
 
-var mapk = node()
+var mapk = node(__dirname+"/mapek.ini")
 var net = mapk.network
 
 mapk.monitor(function(data,next){
