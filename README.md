@@ -1,6 +1,6 @@
 # MAPEK-FRAMEWORK
 
-The first framework written in NodeJs to implement a MAPEK Loop.
+The first framework to implement a MAPE-K Loop.
 This project enable the community to create auto-adaptative systems based on
 a simple version of the MAPE-K Loop.
 
@@ -14,11 +14,17 @@ It's mandatory to create a .ini or .properties file and pass it the path when in
 This framework automatically creates a REST api wich only supports:
 - POST http://..../monitor and a JSON in the body of the request
 
-Calling this api fires a chain of events and give the developer an easy way to do something with 
-the data received in two phases.
-It's also possible to create networks of MAPE-K loops with the mandatory configuration file and a provided network module.
+Calling this api fires a monitor event with the JSON received in the REST interface. 
+Furthermore it's possible to easily pass data from the monitor phase to the process phase.
 
-Example:
+It's also possible to create networks of MAPE-K loops with the configuration file and the network module.
+
+# Example of use
+First of all 
+```
+npm install --save mapek 
+```
+And then
 ```
 var mapek = require("mapek");
 
@@ -47,7 +53,7 @@ anotherMapekLoop.hostname=localhost
 anotherMapekLoop.port=9999
 ```
 
-There is a couple of example implementations to show the use of the actual api.
+There is a couple of example implementations in the samples folder.
 
 
 # Future plans
