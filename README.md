@@ -6,6 +6,8 @@ a simple version of the MAPE-K Loop.
 
 Information about auto-adaptative software and the MAPE-K loop: http://www.uio.no/studier/emner/matnat/ifi/INF5360/v12/undervisningsmateriale/MAPE-K%20adap%20control%20loop.pdf
 
+This framework is avaiable as an npm module: https://www.npmjs.com/package/mapek
+
 # Getting started
 
 It's mandatory to create a .ini or .properties file and pass it the path when instantiating a mapekloop
@@ -50,7 +52,6 @@ There is a couple of example implementations to show the use of the actual api.
 
 # Future plans
 
-  - create a npm module(Done)
   - create a cloud service to share the configurations
   - improve the properties system
   - Implement a generic repository to enable diferent types of databases
