@@ -1,6 +1,6 @@
 {
   "name": "mapek",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "NodeJs framework to implement autoadaptative software with simple MAPEK loops",
   "main": "mapek.js",
   "scripts": {
